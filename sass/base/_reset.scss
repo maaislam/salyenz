@@ -7,7 +7,8 @@
   html {
     font-size: 62.5%;
     box-sizing: border-box;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    
   }
 
 
@@ -127,6 +128,10 @@
     transition: width .3s;
   }
 
+  form{
+    color-scheme: dark;
+  }
+
   label{
     position: relative;
     display: block;
@@ -141,22 +146,26 @@
     border-bottom-style: solid;
     border-radius: 0;
     margin-bottom: 2rem;
-    padding: 1.5rem 2.0rem 1.5rem 0;
+    padding: 1.5rem 2.0rem 1.5rem 0.5rem;
     border-bottom-color: hsla(0,0%,100%,.37);
-    color: #c5def7;
+    color: $brand-blue-tertiary;
     font-size: 2rem;
     line-height: 1.0;
+    transition: all 0.3s ease-in-out;
 
     &::placeholder{
       color: $brand-gray-primary;
       font-size: 1.5rem;
+      
     }
 
-    &:focus{
+    &:focus{ 
       outline-color: transparent;
       outline-width: 0;
+      
     }
   }
+ 
 
   textarea {
     min-height: 120px;
