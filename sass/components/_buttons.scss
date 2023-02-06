@@ -1,0 +1,42 @@
+
+
+.btn{
+
+    &--primary{
+        display: inline-block;
+        padding: 1.5rem 3rem;
+        background-color: $brand-red-primary;
+        color: $brand-white-primary;
+        border-radius: 5px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 2rem;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          background-color: $brand-black-secondary;
+          color: $brand-white-primary;
+        }
+    }
+    &--submit{
+        width: 100%;
+        display: block;
+        margin-top: 2rem;
+        padding: 2rem 3rem;
+        color: $brand-white-primary;
+        font-size: 1.6rem;
+        font-weight: 700;
+        background-color: $brand-blue-primary;
+        transition: all 0.2s ease-in-out;
+       
+        &:hover{
+          background-color: $brand-blue-secondary;
+          transform: translateY(-2px);
+        }
+        &:active{
+          transform: translateY(0);
+        }
+    }
+
+
+}
