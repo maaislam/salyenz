@@ -32,15 +32,19 @@
     <div class="parallax"></div>   
     <header class="">
       <div class="nav-wrapper wrapper">
-        <a href="#"><img src="./images/logo.svg" alt="Salyenz Logo"></a>       
-        <nav>
-          <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Contact</a></li>  
-          </ul>
-        </nav>
+        <a href="#"><img src="./images/logo.svg" alt="Salyenz Logo"></a>
+        <input type="checkbox" id="menu-toggle" /><label class="menu-button" for="menu-toggle"><span class="menu-icon"></span></label>       
+        <div class="menu">
+          <nav>
+            <ul>
+                <li class="menu-item"><a href="#">Home</a></li>
+                <li class="menu-item"><a href="#">Services</a></li>
+                <li class="menu-item"><a href="#">Gallery</a></li>
+                <li class="menu-item"><a href="#">Contact</a></li>  
+            </ul>
+          </nav>
+
+        </div>
       </div>
     </header>
     <section class="hero">
@@ -48,12 +52,12 @@
         <div class="col1">
           <h1 class="hero__title">Transform Your Online Presence</h1>
           <h2 class="hero__subtitle"><span class="highlight">Salyenz</span> is here to help you achieve your business goals through A/B testing, <br> Shopify development, web development, and mobile app development.</h2>
-          <a href="#" class="hero__btn btn--primary">Get Started</a>
+          <a href="#" class="show-desktop hero__btn btn--primary">Get Started</a>
         </div>
         <div class="col2">
           <div class="hero__form--wrapper">
             <div class="hero__form--title"><h2>Get Started Today</h2></div>
-            <div class="hero__form--subtitle">
+            <div class="hero__form--subtitle show-desktop">
               <p>Take the first step towards enhancing your online presence. Contact us today to schedule a consultation and learn more about how we can help you succeed.</p>
             </div>
             <form id="hero__form" name="contact" method="POST" data-netlify="true" >

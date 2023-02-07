@@ -2,6 +2,7 @@
 @import './base/reset';
 @import './base/animations';
 @import './components/buttons';
+@import './base/utils';
   
 
   .parallax{
@@ -38,7 +39,12 @@
   .wrapper {
     max-width: 1300px;
     margin: 0 auto;
-    
+    @include media-query(tablet){
+      padding: 0 2rem;
+    }
+    @include media-query(mobile){
+      padding: 0 0.5rem;
+    }
   }
   
   
@@ -49,33 +55,53 @@
     margin-top: 6rem;
     padding: 4rem 2rem;
     color: #fff;
+    @include media-query(tablet){
+      margin-top: 4rem;
+    }
+    @include media-query(mobile){
+      margin-top: 0;
+      padding-top: 0;
+    }
 
     .highlight{
       font-size: 2.5rem;
       font-weight: 700;
+      @include media-query(mobile){
+        font-size: 2rem;
+      }
     }
 
     .hero-wrapper{
       display: grid;
       grid-template-columns: 2fr 1fr;
       gap: 4rem;
-      @include media-query(lg){
+      @include media-query(laptop){
         grid-template-columns: 1fr 1fr;
+      }
+      @include media-query(tablet){
+        grid-template-columns: 1fr;
+        gap: 2rem;
       }
     }
 
     .hero__title{
       font-size:6rem;
-      @include media-query(sm){
+      @include media-query(tablet){
         font-size: 5rem;
+      }
+      @include media-query(mobile){
+        font-size: 4rem;
       }
     }
 
     .hero__subtitle{
       font-size: 2rem;
       line-height: 1.3;
-      @include media-query(sm){
+      @include media-query(tablet){
         font-size: 2rem;
+      }
+      @include media-query(mobile){
+        font-size: 1.5rem;
       }
     }
 
@@ -85,7 +111,9 @@
       margin-left: auto;
       padding: 2rem 3rem;
       background-color: $brand-black-secondary;
-      
+      @include media-query(mobile){
+        margin: 0 auto;
+      }
 
       .hero__form--subtitle{
         margin-bottom: 2rem;

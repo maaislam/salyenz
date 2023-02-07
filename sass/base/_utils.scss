@@ -1,0 +1,13 @@
+
+.show-mobile{
+    display: none;
+    @include media-query(mobile){
+        display: block;
+    }
+}
+.show-desktop{
+    display: block;
+    @include media-query(mobile){
+        display: none;
+    }
+}
